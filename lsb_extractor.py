@@ -1,5 +1,6 @@
 
-
+# I'm aware that this is not the best solution also I know that it could be written in more "Python" way. 
+# It's purpose is to teach fundamentals of extracting LSB from file. 
 
 binary_data = open("blank.bmp","rb") # "rb" opening data in binary mode
 binary_data.seek(60)  # this will change current file stream position
