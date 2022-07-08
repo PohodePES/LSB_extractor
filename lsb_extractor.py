@@ -1,10 +1,10 @@
 
-# I'm aware that this is not the best solution also I know that it could be written in more "Python" way. 
-# It's purpose is to teach fundamentals of extracting LSB from file. 
+# I'm aware that this is not the best solution and I also know that it could be written in more "Python" way. 
+# Its purpose is to teach fundamentals of extracting LSB from a file. 
 
 binary_data = open("blank.bmp","rb") # "rb" opening data in binary mode
 binary_data.seek(60)  # this will change current file stream position
-data = binary_data.read() # read() method return number of bytes from file where default is -1 e.i. whole file
+data = binary_data.read() # read() method returns the number of bytes from a file where default is -1 e.i. the whole file
 list_for_LSB = [] #creating empty list
 
 for byte in data:
